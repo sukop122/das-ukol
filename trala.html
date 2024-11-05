@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        left:800px ;
+        left:550px ;
         
        }
 
@@ -35,10 +35,27 @@
 <body >
     <h1 class="hrozne">Deprese</h1>
     <p class="text">z githubu</p>
-    <img class="obraz" src="https://th.bing.com/th/id/OIP.UwiglYxUXVp7DiUML0fjbAHaE2?rs=1&pid=ImgDetMain" alt="">
+    <img class="obraz" src="https://hcceskalipa.cz/photo/max122.jpg" alt="">
 
 <body>
     <p>rajkfnwdawdadadwa</p>
 
+    <script>
+        let image = document.querySelector(".obraz")
+        let nadpis = document.querySelector(".hrozne")
+        let text = document.querySelector(".text")
+
+        image.addEventListener("click", function () {
+            nadpis.style.color = "blue"
+            text.style.fontSize = "100px"
+            
+            document.querySelector(".obraz").src =""
+            
+        }) 
+
+
+
+    </script>
 </body>
+
 </html>
